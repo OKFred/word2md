@@ -4,20 +4,33 @@
     "description": "Convert .docx files to Markdown with image extraction.",
     "main": "src/index.ts",
     "type": "module",
+    "bin": {
+        "word2md": "./bin/word2md.js"
+    },
     "scripts": {
         "start": "npx tsx src/index.ts",
         "dev": "npx tsx watch src/index.ts",
-        "test": "npx tsx src/index.ts"
+        "test": "npx tsx src/index.ts",
+        "build": "tsc",
+        "prepublishOnly": "npm run build"
     },
+    "files": [
+        "src/**/*",
+        "bin/**/*",
+        "dist/**/*"
+    ],
     "dependencies": {
         "mammoth": "^1.0.0",
         "turndown": "^7.1.2",
         "uuid": "^9.0.0"
     },
     "devDependencies": {
+        "@types/jest": "^30.0.0",
         "@types/node": "^20.0.0",
         "@types/turndown": "^5.0.5",
         "@types/uuid": "^10.0.0",
+        "jest": "^30.0.5",
+        "ts-jest": "^29.4.1",
         "tsx": "^4.0.0",
         "typescript": "^5.0.0"
     },
@@ -25,8 +38,17 @@
         "docx",
         "markdown",
         "converter",
-        "images"
+        "images",
+        "cli",
+        "command-line"
     ],
     "author": "FZ",
-    "license": "MIT"
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/okfred/word2md.git"
+    },
+    "engines": {
+        "node": ">=16.0.0"
+    }
 }
