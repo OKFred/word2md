@@ -1,6 +1,6 @@
 {
     "name": "word2md",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "description": "Convert .docx files to Markdown with image extraction.",
     "main": "src/index.ts",
     "type": "module",
