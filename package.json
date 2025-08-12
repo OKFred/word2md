@@ -1,0 +1,32 @@
+{
+    "name": "word2md",
+    "version": "1.0.0",
+    "description": "Convert .docx files to Markdown with image extraction.",
+    "main": "src/index.ts",
+    "type": "module",
+    "scripts": {
+        "start": "npx tsx src/index.ts",
+        "dev": "npx tsx watch src/index.ts",
+        "test": "npx tsx src/index.ts"
+    },
+    "dependencies": {
+        "mammoth": "^1.0.0",
+        "turndown": "^7.1.2",
+        "uuid": "^9.0.0"
+    },
+    "devDependencies": {
+        "@types/node": "^20.0.0",
+        "@types/turndown": "^5.0.5",
+        "@types/uuid": "^10.0.0",
+        "tsx": "^4.0.0",
+        "typescript": "^5.0.0"
+    },
+    "keywords": [
+        "docx",
+        "markdown",
+        "converter",
+        "images"
+    ],
+    "author": "FZ",
+    "license": "MIT"
+}
