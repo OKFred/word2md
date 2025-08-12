@@ -1,6 +1,6 @@
 # word2md
 
-> 📖 [中文文档 (Chinese Documentation)](https://github.com/OKFred/word2md/blob/master/EADME_zhCN.md)
+> 📖 [中文文档 (Chinese Documentation)](https://github.com/OKFred/word2md/blob/master/README_zhCN.md)
 
 A simple and easy-to-use command-line tool for converting Microsoft Word documents (.docx) to Markdown format with automatic image extraction and saving.
 
